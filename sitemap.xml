@@ -16,6 +16,66 @@
   <priority>1.00</priority>
   <changefreq>monthly</changefreq>
 </url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/3</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/4</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/5</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/6</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/7</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/8</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/9</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/10</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/11</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/12</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/13</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/14</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
 
 <!-- events -->
 <url>
@@ -25,6 +85,41 @@
 </url>
 <url>
   <loc>https://fair4chemnl.github.io/training-material/events/2</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/events/3</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/events/4</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/events/5</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/events/6</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/events/7</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/events/8</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/events/9</loc>
   <priority>1.00</priority>
   <changefreq>monthly</changefreq>
 </url>
