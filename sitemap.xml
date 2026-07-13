@@ -11,10 +11,20 @@
   <priority>1.00</priority>
   <changefreq>monthly</changefreq>
 </url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/materials/2</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
 
 <!-- events -->
 <url>
   <loc>https://fair4chemnl.github.io/training-material/events/1</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://fair4chemnl.github.io/training-material/events/2</loc>
   <priority>1.00</priority>
   <changefreq>monthly</changefreq>
 </url>
