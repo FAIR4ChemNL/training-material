@@ -9,3 +9,8 @@
 * [Fully booked – Essentials 4 Data Support](7.md)
 * [Yoda hands-on workshop](8.md)
 * [NWO Life2026](9.md)
+* [Hands-on with Research Data Management in Chemistry (ChE-601)](10.md)
+* [WorldFAIR Webinar: Chemistry and Nanomaterials case studies](11.md)
+* [OpenAIRE training: Open Access, Open Data and FAIR RDM](12.md)
+* [AI for Chemistry (EPFL CH-457)](13.md)
+* [Introduction to FAIR Research Data Management & Data Management Plan (SIB)](14.md)
