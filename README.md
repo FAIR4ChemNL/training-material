@@ -2,6 +2,9 @@
 
 Inventory of events training material for FAIR in Chemistry.
 
+* [events](events/)
+* [materials](materials/)
+
 ## Technology
 
 This website contains of one page for each event and each training material. Each page contains a mix
@@ -29,6 +32,9 @@ trainingMaterial:
 ```
 
 The content is converted into the default GitHub Pages content and a bit of Jekyll customization into a webpage.
+
+The extraction of the auto-generated JSON-LD can be tested with
+the [schema.org validator](https://validator.schema.org/).
 
 ## Taxila.nl
 
