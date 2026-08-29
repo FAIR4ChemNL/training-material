@@ -1,6 +1,6 @@
 # FAIR4ChemNL selected events and training materials
 
-Inventory of events training material for FAIR in Chemistry.
+Inventory of events training material for FAIR in Chemistry by the [FAIR4ChemNL](https://fair4chem.nl/) project:
 
 * [events](events/)
 * [materials](materials/)
