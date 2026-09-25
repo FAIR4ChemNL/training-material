@@ -7,6 +7,8 @@ and materials/*.md, excluding the index.md files in those folders.
 
 The keywords/ folder is fully generated: it gets an index.md listing all
 keywords and one page per keyword; other .md files in it are removed.
+The keywords and their frequencies are also written to _data/keywords.json,
+which is used for the keyword cloud on the front page.
 
 Usage: python3 scripts/update_indexes.py
 Requires: PyYAML (pip install pyyaml)
@@ -14,6 +16,7 @@ Requires: PyYAML (pip install pyyaml)
 
 from pathlib import Path
 
+import json
 import re
 from collections import Counter
 
@@ -23,6 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 BASE_URL = "https://fair4chemnl.github.io/training-material"
 SECTIONS = [("materials", "Materials"), ("events", "Events")]
 KEYWORDS_DIR = ROOT / "keywords"
+KEYWORDS_DATA = ROOT / "_data" / "keywords.json"
 
 
 def read_front_matter(path):
@@ -99,11 +103,16 @@ def write_keywords(sections):
         if old.name != "index.md" and old.stem not in groups:
             old.unlink()
 
+    counts = {slug: sum(len(p) for p in groups[slug].values()) for slug in order}
+
     lines = ["# Keywords", ""]
     for slug in order:
-        count = sum(len(p) for p in groups[slug].values())
-        lines.append(f"* [{md_escape(labels[slug])}]({slug}.md) ({count})")
+        lines.append(f"* [{md_escape(labels[slug])}]({slug}.md) ({counts[slug]})")
     (KEYWORDS_DIR / "index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    KEYWORDS_DATA.parent.mkdir(exist_ok=True)
+    data = [{"keyword": labels[slug], "slug": slug, "count": counts[slug]} for slug in order]
+    KEYWORDS_DATA.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     for slug in order:
         lines = [f"# Keyword: {md_escape(labels[slug])}"]

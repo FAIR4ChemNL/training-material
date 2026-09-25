@@ -6,11 +6,12 @@ SCRIPT := scripts/update_indexes.py
 
 .PHONY: all force
 
-# Regenerates sitemap.xml, events/index.md, materials/index.md and keywords/
+# Regenerates sitemap.xml, events/index.md, materials/index.md, keywords/
+# and _data/keywords.json
 # when any event or material page (or the script) has changed.
 all: sitemap.xml
 
-sitemap.xml events/index.md materials/index.md keywords/index.md &: $(SOURCES) $(SCRIPT)
+sitemap.xml events/index.md materials/index.md keywords/index.md _data/keywords.json &: $(SOURCES) $(SCRIPT)
 	$(PYTHON) $(SCRIPT)
 
 # Regenerate unconditionally

@@ -30,6 +30,18 @@
 			color: #6a737d;
 		}
 
+		.keyword-cloud .keyword-cloud-words a {
+			display: inline-block;
+			margin: 0 0.4em;
+			line-height: 1.6;
+		}
+
+		.keyword-cloud svg a:hover text,
+		.keyword-cloud svg a:focus text {
+			text-decoration: underline;
+			opacity: 0.8;
+		}
+
 		@media (max-width: 767px) {
 			.markdown-body {
 				padding: 15px;
@@ -47,7 +59,12 @@
   <body>
 	  <div class='markdown-body'>
 	     <a href="{{ '/' | relative_url }}"><img class="logo" src="{{ '/assets/fair4chemnl-logo.png' | relative_url }}" alt="FAIR4ChemNL logo"></a>
-	     {{ content }}
+	     {% if content contains "<!-- keyword-cloud -->" %}
+	       {% capture keyword_cloud %}{% include keyword-cloud.html %}{% endcapture %}
+	       {{ content | replace: "<!-- keyword-cloud -->", keyword_cloud }}
+	     {% else %}
+	       {{ content }}
+	     {% endif %}
 
 	     <footer>
 	       <p>

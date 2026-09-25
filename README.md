@@ -6,6 +6,8 @@ Inventory of events training material for FAIR in Chemistry by the [FAIR4ChemNL]
 * [materials](materials/)
 * [keywords](keywords/)
 
+<!-- keyword-cloud -->
+
 ## Technology
 
 This website contains of one page for each event and each training material. Each page contains a mix
@@ -35,7 +37,9 @@ trainingMaterial:
 The `keywords` are a comma-separated list (e.g. `keywords: "identifiers, cheminformatics"`) and are used
 to create one page per keyword in the [keywords/](keywords/) folder, listing all events and materials
 with that keyword. Keywords are matched case-insensitively, so preferably reuse existing keywords
-(see [keywords/](keywords/)) rather than introducing new spellings.
+(see [keywords/](keywords/)) rather than introducing new spellings. The keywords and their
+frequencies are also written to `_data/keywords.json`, which is used for the keyword cloud
+on the front page of the website (see `_includes/keyword-cloud.html`).
 
 The content is converted into the default GitHub Pages content and a bit of Jekyll customization into a webpage.
 

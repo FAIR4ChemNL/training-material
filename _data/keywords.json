@@ -1,0 +1,162 @@
+[
+  {
+    "keyword": "ai-ml",
+    "slug": "ai-ml",
+    "count": 11
+  },
+  {
+    "keyword": "biocatalysis",
+    "slug": "biocatalysis",
+    "count": 1
+  },
+  {
+    "keyword": "catalysis",
+    "slug": "catalysis",
+    "count": 1
+  },
+  {
+    "keyword": "cheminformatics",
+    "slug": "cheminformatics",
+    "count": 19
+  },
+  {
+    "keyword": "chemistry",
+    "slug": "chemistry",
+    "count": 2
+  },
+  {
+    "keyword": "computational-chemistry",
+    "slug": "computational-chemistry",
+    "count": 2
+  },
+  {
+    "keyword": "Data",
+    "slug": "data",
+    "count": 2
+  },
+  {
+    "keyword": "data-publishing",
+    "slug": "data-publishing",
+    "count": 5
+  },
+  {
+    "keyword": "dmp",
+    "slug": "dmp",
+    "count": 3
+  },
+  {
+    "keyword": "eln",
+    "slug": "eln",
+    "count": 7
+  },
+  {
+    "keyword": "identifier",
+    "slug": "identifier",
+    "count": 1
+  },
+  {
+    "keyword": "identifiers",
+    "slug": "identifiers",
+    "count": 16
+  },
+  {
+    "keyword": "InChI",
+    "slug": "inchi",
+    "count": 4
+  },
+  {
+    "keyword": "InChIKey",
+    "slug": "inchikey",
+    "count": 1
+  },
+  {
+    "keyword": "IUPAC",
+    "slug": "iupac",
+    "count": 1
+  },
+  {
+    "keyword": "IUPAC name",
+    "slug": "iupac-name",
+    "count": 1
+  },
+  {
+    "keyword": "license",
+    "slug": "license",
+    "count": 1
+  },
+  {
+    "keyword": "licensing",
+    "slug": "licensing",
+    "count": 4
+  },
+  {
+    "keyword": "metadata",
+    "slug": "metadata",
+    "count": 9
+  },
+  {
+    "keyword": "ontologies",
+    "slug": "ontologies",
+    "count": 4
+  },
+  {
+    "keyword": "OpenScienceMOOC",
+    "slug": "opensciencemooc",
+    "count": 1
+  },
+  {
+    "keyword": "OPSIN",
+    "slug": "opsin",
+    "count": 1
+  },
+  {
+    "keyword": "PubChem",
+    "slug": "pubchem",
+    "count": 1
+  },
+  {
+    "keyword": "rdm-basics",
+    "slug": "rdm-basics",
+    "count": 9
+  },
+  {
+    "keyword": "repositories",
+    "slug": "repositories",
+    "count": 5
+  },
+  {
+    "keyword": "reproducibility",
+    "slug": "reproducibility",
+    "count": 1
+  },
+  {
+    "keyword": "SMILES",
+    "slug": "smiles",
+    "count": 2
+  },
+  {
+    "keyword": "Software",
+    "slug": "software",
+    "count": 1
+  },
+  {
+    "keyword": "spectroscopy",
+    "slug": "spectroscopy",
+    "count": 3
+  },
+  {
+    "keyword": "standards",
+    "slug": "standards",
+    "count": 3
+  },
+  {
+    "keyword": "workflows",
+    "slug": "workflows",
+    "count": 3
+  },
+  {
+    "keyword": "Zenodo",
+    "slug": "zenodo",
+    "count": 2
+  }
+]
