@@ -39,3 +39,56 @@ the [schema.org validator](https://validator.schema.org/).
 ## Taxila.nl
 
 In combination with the [sitemap.xml](sitemap.xml), each page can be indexed by [Taxila.nl](https://taxila.nl/collections/fair4chemnl).
+
+## Adding a new event or material
+
+1. Create a new page with the next free number in the `events/` or `materials/` folder, e.g. `materials/51.md`.
+   The easiest way is to copy an existing page and edit it.
+2. Fill in the YAML header. For a material, use `"@type": LearningResource` (see the example above);
+   for an event, use `"@type": Event`:
+
+   ```yaml
+   ---
+   layout: default
+
+   trainingMaterial:
+     "@context": http://schema.org/
+     "@type": Event
+     "@id": https://www.nwo.nl/en/meetings/nwo-life2026
+     description: "NWO Life is an annual scientific conference for Life scientists that offers inspiration in several ways: enjoy sessions..."
+     name: "NWO Life2026"
+     url: https://www.nwo.nl/en/meetings/nwo-life2026
+   ---
+   ```
+
+   The `name` is required: it is used as the title in the index pages.
+3. Below the YAML header, add the human-readable content: a title, a list with the URL
+   (as a Markdown link, e.g. `* URL: [https://example.org/](https://example.org/)`),
+   for events also the `When:` and `Where:`, and the description.
+4. Update [sitemap.xml](sitemap.xml), [events/index.md](events/index.md) and [materials/index.md](materials/index.md)
+   by running:
+
+   ```shell
+   make
+   ```
+
+   This runs [scripts/update_indexes.py](scripts/update_indexes.py), which creates these files
+   from the YAML headers of all pages. It needs Python 3 with [PyYAML](https://pypi.org/project/PyYAML/),
+   see [Setting up Python](#setting-up-python) below. Use `make force` to regenerate the files even if
+   no page changed, or `make PYTHON=/path/to/python` to use a specific Python.
+5. Commit the new page together with the updated index files and sitemap.
+
+## Setting up Python
+
+The script needs Python 3 and the packages listed in [requirements.txt](requirements.txt).
+The easiest is to install these in a virtual environment in the `venv` folder of this repository
+(which is ignored by git). This only has to be done once:
+
+```shell
+python3 -m venv venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+When the `venv` folder exists, `make` automatically uses the Python in it, so there is no need
+to activate the virtual environment.
