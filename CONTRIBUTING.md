@@ -1,4 +1,9 @@
-# Contributing
+# Contributing and using
+
+## Taxila.nl
+
+In combination with the [sitemap.xml](sitemap.xml), each page can be indexed by [Taxila.nl](https://taxila.nl/collections/fair4chemnl)
+and ELIXIR Europe's [TeSS](https://tess.elixir-europe.org/).
 
 ## Technology
 
