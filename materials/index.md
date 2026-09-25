@@ -49,3 +49,4 @@
 * [Predicting EI+ mass spectra with QCxMS](47.md)
 * [Jaqpot Hackathon: from bench to community as a web service (NanoCommons)](48.md)
 * [FAIR Implementation Profile (FIP) for RSpace Electronic Lab Notebook](49.md)
+* [Explain that InChI](50.md)
