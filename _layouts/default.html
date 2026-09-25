@@ -15,6 +15,13 @@
 			padding: 45px;
 		}
 
+		.markdown-body img.logo {
+			display: block;
+			width: 240px;
+			max-width: 100%;
+			margin-bottom: 16px;
+		}
+
 		@media (max-width: 767px) {
 			.markdown-body {
 				padding: 15px;
@@ -31,6 +38,7 @@
 
   <body>
 	  <div class='markdown-body'>
+	     <a href="{{ '/' | relative_url }}"><img class="logo" src="{{ '/assets/fair4chemnl-logo.png' | relative_url }}" alt="FAIR4ChemNL logo"></a>
 	     {{ content }}
 	  </div>
   </body>
