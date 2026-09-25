@@ -4,6 +4,7 @@ Inventory of events training material for FAIR in Chemistry by the [FAIR4ChemNL]
 
 * [events](events/)
 * [materials](materials/)
+* [keywords](keywords/)
 
 ## Technology
 
@@ -30,6 +31,11 @@ trainingMaterial:
   url: https://w3id.org/faircookbook/FCB034
 ---
 ```
+
+The `keywords` are a comma-separated list (e.g. `keywords: "identifiers, cheminformatics"`) and are used
+to create one page per keyword in the [keywords/](keywords/) folder, listing all events and materials
+with that keyword. Keywords are matched case-insensitively, so preferably reuse existing keywords
+(see [keywords/](keywords/)) rather than introducing new spellings.
 
 The content is converted into the default GitHub Pages content and a bit of Jekyll customization into a webpage.
 
@@ -61,22 +67,24 @@ In combination with the [sitemap.xml](sitemap.xml), each page can be indexed by 
    ---
    ```
 
-   The `name` is required: it is used as the title in the index pages.
+   The `name` is required: it is used as the title in the index pages. The `keywords` are optional,
+   but recommended (see above).
 3. Below the YAML header, add the human-readable content: a title, a list with the URL
    (as a Markdown link, e.g. `* URL: [https://example.org/](https://example.org/)`),
    for events also the `When:` and `Where:`, and the description.
-4. Update [sitemap.xml](sitemap.xml), [events/index.md](events/index.md) and [materials/index.md](materials/index.md)
-   by running:
+4. Update [sitemap.xml](sitemap.xml), [events/index.md](events/index.md), [materials/index.md](materials/index.md)
+   and the keyword pages in [keywords/](keywords/) by running:
 
    ```shell
    make
    ```
 
    This runs [scripts/update_indexes.py](scripts/update_indexes.py), which creates these files
-   from the YAML headers of all pages. It needs Python 3 with [PyYAML](https://pypi.org/project/PyYAML/),
+   from the YAML headers of all pages. The `keywords/` folder is fully generated, so do not edit
+   the files in it by hand. It needs Python 3 with [PyYAML](https://pypi.org/project/PyYAML/),
    see [Setting up Python](#setting-up-python) below. Use `make force` to regenerate the files even if
    no page changed, or `make PYTHON=/path/to/python` to use a specific Python.
-5. Commit the new page together with the updated index files and sitemap.
+5. Commit the new page together with the updated index files, keyword pages and sitemap.
 
 ## Setting up Python
 
@@ -86,7 +94,7 @@ The easiest is to install these in a virtual environment in the `venv` folder of
 
 ```shell
 python3 -m venv venv
-source .venv/bin/activate
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
