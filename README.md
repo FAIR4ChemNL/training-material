@@ -4,7 +4,6 @@ Inventory of events training material for FAIR in Chemistry by the [FAIR4ChemNL]
 
 * [events](events/)
 * [materials](materials/)
-* [keywords](keywords/)
 
 <!-- keyword-cloud -->
 
