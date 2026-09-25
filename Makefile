@@ -1,4 +1,4 @@
-# Use the virtual environment in venv/ if it exists (see README.md)
+# Use the virtual environment in venv/ if it exists (see CONTRIBUTING.md)
 PYTHON ?= $(if $(wildcard venv/bin/python),venv/bin/python,python3)
 
 SOURCES := $(filter-out %/index.md,$(wildcard events/*.md materials/*.md))
