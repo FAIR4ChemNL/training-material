@@ -22,6 +22,14 @@
 			margin-bottom: 16px;
 		}
 
+		.markdown-body footer {
+			margin-top: 32px;
+			padding-top: 16px;
+			border-top: 1px solid #eaecef;
+			font-size: 85%;
+			color: #6a737d;
+		}
+
 		@media (max-width: 767px) {
 			.markdown-body {
 				padding: 15px;
@@ -40,6 +48,13 @@
 	  <div class='markdown-body'>
 	     <a href="{{ '/' | relative_url }}"><img class="logo" src="{{ '/assets/fair4chemnl-logo.png' | relative_url }}" alt="FAIR4ChemNL logo"></a>
 	     {{ content }}
+
+	     <footer>
+	       <p>
+	         Follow FAIR4ChemNL on <a rel="me" href="https://social.edu.nl/@fair4chemnl">Mastodon</a>.
+	         Funded by NWO grant <a href="https://doi.org/10.61686/XVYQV45374">XVYQV45374</a>.
+	       </p>
+	     </footer>
 	  </div>
   </body>
 </html>
