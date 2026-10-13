@@ -1,2 +1,11 @@
 #theme: jekyll-theme-minimal
 markdown: kramdown
+
+# Same as the default GitHub Pages build, which is not used anymore:
+# pages without YAML front matter are rendered too, README.md becomes the
+# front page, and links to .md files are rewritten to the generated pages.
+plugins:
+  - jekyll-default-layout
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-relative-links
