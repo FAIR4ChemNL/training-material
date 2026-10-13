@@ -50,6 +50,7 @@
 	</style>
 
 	{% if page.trainingMaterial %}
+		{% if page.jsonld_url %}<link rel="alternate" type="application/ld+json" href="{{ page.jsonld_url | relative_url }}">{% endif %}
 		<script type="application/ld+json">
 			{{ page.trainingMaterial | jsonify }}
 		</script>
