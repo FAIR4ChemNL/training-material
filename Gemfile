@@ -1,3 +1,3 @@
-ource "https://rubygems.org"
+source "https://rubygems.org"
 
 gem "jekyll", "~> 3.9.0"
